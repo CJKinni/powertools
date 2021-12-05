@@ -40,6 +40,9 @@ the `powertool/range` package.
 to largest.
 
 `#each` now works backwards for all classes that include a `#pred` method.
+This is only enabled when a range is between two elements of the same class.
+(For example, `(date.today..100000000)` is a valid Ruby range. We fallback
+to the default `#each` implementation for these.)
 
 # Maybe Chains
 

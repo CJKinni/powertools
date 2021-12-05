@@ -7,7 +7,10 @@ list of things I find myself encountering frequently.
 
 # Usage
 
-You can use `require 'powertools'` to access all the tools.
+Install Powertools with `gem install powertools`.
+
+Then, you can add `require 'powertools'` to your Ruby file to access all the
+features provided by Powertools.
 
 You may also want to only use certain features.
 

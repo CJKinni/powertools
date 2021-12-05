@@ -5,6 +5,31 @@ This gem provides some extensions to Ruby classes that make my life a lot easier
 It doesn't aim to be a comprehensive list of improvements, but rather a curated
 list of things I find myself encountering frequently.
 
+# Usage
+
+You can use `require 'powertools'` to access all the tools.
+
+You may also want to only use certain features.
+
+You can currently also use the following to selectively add features:
+
+- `require 'powertool/maybe_chain'`
+- `require 'powertool/range'`
+
+# Warning When Using All Features
+
+Some features may introduce breaking changes.  I've tried to do this only where
+I have never personally seen a usecase where I've relied on a particular feature.
+
+Still, I'll make an effor to list any changes that break a potential assumption
+about the Ruby standard library here.
+
+## `Range#each`
+
+If you are relying on `(4..1).each { |_| ... }` to do nothing,
+because it's going from a higher number to a lower number, you should not use
+the `powertool/range` package.
+
 # Range Improvements
 
 `#sort` is provided as a helper method to ensure your range is from smallest
@@ -12,7 +37,7 @@ to largest.
 
 `#each` now works backwards for all classes that include a `#pred` method.
 
-# `#maybe_chain`
+# Maybe Chains
 
 `#maybe_chain` is added to `Array` and `Hash`.  It takes an array as an argument,
 and attempts to access nested data based on the elements of the argument. If at

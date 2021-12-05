@@ -16,10 +16,11 @@ You can currently also use the following to selectively add features:
 - `require 'powertool/maybe_chain'`
 - `require 'powertool/range'`
 
-# Warning When Using All Features
+# Warning about Breaking Changes
 
-Some features may introduce breaking changes.  I've tried to do this only where
-I have never personally seen a usecase where I've relied on a particular feature.
+Some features may introduce breaking changes to the Ruby standard library.
+These 'breaking changes' are generally minor changes which in my opinion
+conform to my expectations about how the language should work.
 
 Still, I'll make an effor to list any changes that break a potential assumption
 about the Ruby standard library here.

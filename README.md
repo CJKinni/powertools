@@ -18,6 +18,7 @@ You can currently also use the following to selectively add features:
 
 - `require 'powertool/maybe_chain'`
 - `require 'powertool/range'`
+- `require 'powertool/set'`
 
 # Warning about Breaking Changes
 
@@ -68,4 +69,7 @@ a.maybe_chain [4, :missing_element]
 => nil
 ```
 
+# Popable Sets
 
+`#pop` has been added to `Set`.  This returns a random
+element from the set, and removes it from the set.

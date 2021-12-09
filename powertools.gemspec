@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name	= 'powertools'
-  s.version	= '0.2.0'
+  s.version	= '0.2.1'
   s.summary	= 'A set of small improvements to Ruby classes'
   s.authors	= ['C. Kinniburgh']
   s.email		= 'powertools@cjkinni.com'

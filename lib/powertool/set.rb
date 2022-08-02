@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
+# Extensions to Ruby's Set class
 class Set
-    def pop
-      temp = self.to_a.pop
-      self.delete(temp)
-      temp
-    end
+  def pop
+    temp = to_a.pop
+    delete(temp)
+    temp
+  end
 end

@@ -19,6 +19,7 @@ You can currently also use the following to selectively add features:
 - `require 'powertool/maybe_chain'`
 - `require 'powertool/range'`
 - `require 'powertool/set'`
+- `require 'powertool/string'`
 
 # Warning about Breaking Changes
 
